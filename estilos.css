@@ -1,4 +1,5 @@
-html, body {height: 100%; color:mediumslateblue}
+
+html, body {height: 100%; color:rgb(68, 6, 204)}
 html {
   font-size: 20px;
   font-family: "Titan One",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
@@ -8,11 +9,13 @@ h1 {
   text-align: center;
 }
 
+
 p, li {
   font-size: 16px;
   line-height: 2;
   letter-spacing: 1px;
 }
+
 html {
   background-color: #b39ddb;
 }
@@ -24,13 +27,7 @@ h1 {
   color: #9575cd;
   text-shadow: 3px 3px 1px rgb(137, 17, 242);
 }
-body {
-  width: 600px;
-  margin: 0 auto;
-  background-color: #d1c4e9;
-  padding: 0 20px 20px 20px;
-  border: 5px solid rgba(179, 14, 208, 0.418);
-}
+
 
 
 img {
@@ -117,3 +114,395 @@ img {
         padding: 5px 0px;
     }
 }
+
+
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background-image: url(../PAGINA/imagenes/fondo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+main{
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.contenedor__todo{
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+.caja__trasera{
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(155, 41, 243, 0.929);
+
+}
+
+.caja__trasera div{
+  margin: 100px 40px;
+  color: rgb(209, 140, 241);
+  transition: all 500ms;
+}
+
+
+.caja__trasera div p,
+.caja__trasera div button{
+  margin-top: 30px;
+}
+
+.caja__trasera div h3{
+  font-weight: 400;
+  font-size: 26px;
+}
+
+
+
+.caja__trasera button{
+  padding: 10px 40px;
+  border: 2px solid #311b92;
+  font-size: 14px;
+  background: transparent;
+  font-weight: 600;
+  cursor: pointer;
+  color: rgba(67, 3, 179, 0.7);
+  outline: none;
+  transition: all 300ms;
+}
+
+.caja__trasera button:hover{
+  background: #b388ff;
+  color: #673ab7;
+}
+
+
+/*formulario*/
+
+.contenedor__login-register{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 380px;
+  position: relative;
+  top: -185px;
+  left: 10px;
+
+  transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+
+}
+.contenedor__login-register form{
+  width: 100%;
+  padding: 80px 20px;
+  background: rgb(82, 32, 235);
+  position: absolute;
+  border-radius: 20px;
+}
+
+
+
+.contenedor__login-register form h2{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ede7f6;
+}
+
+.contenedor__login-register form input{
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  background: #b39ddb;
+  font-size: 16px;
+  outline: none;
+}
+
+.contenedor__login-register form button{
+  padding: 10px 40px;
+  margin-top: 40px;
+  border: none;
+  font-size: 14px;
+  background: #311b92;
+ cursor: pointer;
+  color: rgb(173, 98, 239);
+  outline: none;
+}
+
+
+
+
+.formulario__login {
+  opacity: 1;
+  display: block;
+}
+.formulario__register {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 850px){
+
+  main{
+      margin-top: 50px;
+  }
+
+  .caja__trasera {
+      max-width: 350px;
+      height: 300px;
+      flex-direction: column;
+      margin: auto;
+  }
+
+  .caja__trasera div{
+      margin: 0px;
+      position: absolute;
+  }
+
+
+  /*Formularios*/
+
+  .contenedor__login-register {
+      top: -10px;
+      left: -5px;
+      margin: auto;
+  }
+
+  .contenedor__login-register form {
+  position: relative;
+  }
+
+
+
+
+
+
+
+
+
+
+ 
+
+*{
+  margin: 5;
+  padding: 5;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #110429;
+  color: #651fff;
+}
+
+nav{
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+  color: #b388ff;
+  border-bottom: 1px solid yellowgreen;
+}
+
+button{
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  border: teal solid 1px;
+  border-radius: 10px;
+  color: teal;
+  background-color: #651fff;
+  font-size: 200%;
+}
+
+
+
+
+
+
+
+.card {
+  width: 260px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+  background-color: #8a0cdf;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.chat-window {
+  height: 220px;
+  overflow-y: scroll;
+}
+
+.message-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.message-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.send-button {
+  border: none;
+  outline: none;
+  background-color: #6c1be6;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.search__input {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #f4f2f2;
+  border: none;
+  color: #646464;
+  padding: 0.7rem 1rem;
+  border-radius: 30px;
+  width: 12em;
+  transition: all ease-in-out .5s;
+  margin-right: -2rem;
+}
+
+.search__input:hover, .search__input:focus {
+  box-shadow: 0 0 1em #00000013;
+}
+
+.search__input:focus {
+  outline: none;
+  background-color: #f0eeee;
+}
+
+.search__input::-webkit-input-placeholder {
+  font-weight: 100;
+  color: #ccc;
+}
+
+.search__input:focus + .search__button {
+  background-color: #f0eeee;
+}
+
+.search__button {
+  border: none;
+  background-color: #f4f2f2;
+  margin-top: .1em;
+}
+
+.search__button:hover {
+  cursor: pointer;
+}
+
+.search__icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: #b4b4b4;
+}
+
+
+
+
+
+
+button {
+  font-size: 1rem;
+  padding: 0.8em 2em;
+  background-color: #000;
+  border: 3px solid yellow;
+  border-radius: 1em;
+  color: #fff;
+  font-weight: bolder;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+  box-shadow: -5px 5px 0px 0px yellow;
+}
+
+button:hover {
+  transform: translate(5px, -5px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
